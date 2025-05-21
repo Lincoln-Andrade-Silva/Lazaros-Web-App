@@ -1,0 +1,20 @@
+.custom-tooltip {
+    cursor: pointer;
+    display: inline-block;
+}
+
+::ng-deep .custom-tooltip-style {
+    font-size: 1rem;
+    color: white;
+    padding: 8px 12px;
+    overflow: visible;
+    border-radius: 4px;
+    white-space: nowrap;
+    background: #2a0047;
+    min-width: max-content;
+}
+
+::ng-deep .custom-tooltip-style .mat-tooltip-content {
+    display: inline;
+    font-weight: normal;
+}

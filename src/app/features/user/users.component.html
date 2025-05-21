@@ -1,0 +1,5 @@
+<div class="center-container">
+    <app-generic-table [columns]="columns" [entityName]="'Users'" [entityList]="entityList"
+        (delete)="handleDelete($event)" (addClick)="openCreateModal()" (edit)="openEditModal($event)">
+    </app-generic-table>
+</div>

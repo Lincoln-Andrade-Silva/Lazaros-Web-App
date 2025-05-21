@@ -1,0 +1,22 @@
+<h2 mat-dialog-title class="modal-title">
+    {{ isEditMode ? 'Edit Profile' : 'Create New Profile' }}
+</h2>
+<mat-dialog-content class="modal-description">
+    <form [formGroup]="profileForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <input class="input-modal" matInput formControlName="description" required>
+            <mat-error *ngIf="profileForm.get('description')?.hasError('required')">
+                Mandatory Field
+            </mat-error>
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-raised-button class="modal-button" color="primary" [disabled]="!profileForm.valid || isLoading"
+        (click)="handleSubmit()">
+        <div class="button-content">
+            <span>{{ isLoading ? (isEditMode ? 'Saving...' : 'Creating...') : (isEditMode ? 'Save' : 'Create') }}</span>
+        </div>
+    </button>
+</mat-dialog-actions>

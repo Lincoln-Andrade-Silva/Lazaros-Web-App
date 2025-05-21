@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from "./core/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  styleUrls: ['./app.component.css'],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  encapsulation: ViewEncapsulation.None,
+  imports: [RouterOutlet, NavbarComponent],
 })
 export class AppComponent {
-  title = 'lazaros-web-app--strict';
+  title = 'lazaros-web-app';
 }

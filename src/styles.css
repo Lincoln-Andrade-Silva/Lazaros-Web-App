@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    height: 100vh !important;
+    background: linear-gradient(to bottom, black 0%, #160025 55%, #2a0047 100%) !important;
+    font-family: "book", "Handset Sans UI", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+}
+
+/* SnackBar de sucesso */
+.success-snackbar {
+    background: #4CAF50;
+    color: white;
+}
+
+/* SnackBar de erro */
+.error-snackbar {
+    background: #d63b30;
+    color: white;
+}
