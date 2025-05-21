@@ -1,0 +1,12 @@
+.table-container {
+    width: 50vw !important;
+    background-color: white !important;
+}
+
+.delete-icon {
+    color: #b90000;
+}
+
+.edit-icon {
+    color: #e7d000;
+}

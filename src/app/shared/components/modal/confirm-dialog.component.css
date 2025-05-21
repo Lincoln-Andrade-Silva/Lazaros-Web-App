@@ -1,0 +1,13 @@
+.modal-button {
+  color: #ffffff !important;
+  background: linear-gradient(to top, #150025 0%, #1f0036 70%, #260042 100%) !important;
+}
+
+.modal-title {
+  font-size: 1.3rem;
+  margin-bottom: 1vh;
+}
+
+.modal-description {
+  margin-bottom: 3vh;
+}
