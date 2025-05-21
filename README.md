@@ -1,59 +1,52 @@
-# LazarosWebAppStrict
+# Lazaros-Front
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+Aplicação web desenvolvida com Angular para consumo da API RESTful [Lazaros-API-Test](https://github.com/seu-usuario/Lazaros-API-Test), permitindo o gerenciamento de usuários e seus respectivos perfis de sistema.
 
-## Development server
+## 🧩 Funcionalidades
 
-To start a local development server, run:
+- Visualização de usuários e perfis
+- Criação, edição e exclusão de:
+  - Perfis de Sistema
+    - Campos: `id`, `descrição`
+  - Usuários
+    - Campos: `id`, `nome`, `perfis` (lista de perfis)
+- Interface amigável com:
+  - Tabelas dinâmicas e reutilizáveis
+  - Modais para edição/criação
+  - Validações de formulário
+
+## 🛠️ Tecnologias Utilizadas
+
+- Angular 17+
+- TypeScript
+- Angular Material
+- RxJS
+
+## ▶️ Como Rodar o Projeto Localmente
+
+### 1. Pré-requisitos
+
+- Node.js 18+
+- Angular CLI
+- Yarn ou NPM
+
+### 2. Instalar dependências
+
+```bash
+npm install
+```
+
+### 3. Rodar a aplicação
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse no navegador:  
+[http://localhost:4200](http://localhost:4200)
 
-## Code scaffolding
+## 📖 Observações
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Essa aplicação depende da [API Lazaros](https://github.com/seu-usuario/Lazaros-API-Test) para funcionar corretamente.
+- Os dados são persistidos em PostgreSQL através da API.
+- Certifique-se de que a API esteja rodando antes de usar o front.
